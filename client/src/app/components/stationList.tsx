@@ -12,6 +12,7 @@ import { IoExitOutline } from "react-icons/io5";
 import Spinner from "../components/spinner";
 import { StationListProps } from "../types/station";
 import FormEditStation from "./formEditStation";
+import FormDeleteStation from "./formRemoveStation";
 
 export default function StationList({
   stationData,
@@ -130,7 +131,14 @@ export default function StationList({
                           openModal({ data: stationByUserId, type: "edit" })
                         }
                       />
-                      <FaTrash color="#1267fc" size={20} cursor="pointer" />
+                      <FaTrash
+                        color="#1267fc"
+                        size={20}
+                        cursor="pointer"
+                        onClick={() =>
+                          openModal({ data: stationByUserId, type: "delete" })
+                        }
+                      />
                     </div>
                   </div>
                 );
@@ -142,6 +150,13 @@ export default function StationList({
       <Modal isOpen={isOpen === "edit"} onClose={closeModal}>
         <FormEditStation
           stationData={data}
+          stationId={data?.id}
+          onClose={closeModal}
+        />
+      </Modal>
+      <Modal isOpen={isOpen === "delete"} onClose={closeModal}>
+        <FormDeleteStation
+          stationName={data?.name}
           stationId={data?.id}
           onClose={closeModal}
         />

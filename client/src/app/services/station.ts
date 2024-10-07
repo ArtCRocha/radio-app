@@ -21,3 +21,8 @@ export async function updateStation(stationId: string, reqData: StationEditProps
     const { data } = await api.patch(`stations/${stationId}`, reqData);
     return data;
 }
+
+export async function deleteStation(stationId: string) {
+    const { data } = await api.delete(`stations/${stationId}`);
+    return data;
+}
