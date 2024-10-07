@@ -11,14 +11,13 @@ import Paginator from "./components/paginator";
 import { useRouter } from "next/navigation";
 import { CiUser } from "react-icons/ci";
 import { IoExitOutline } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [searchStation, setSearchStation] = useState<string>("");
 
   const { user, logout } = useAuth();
-
-  console.log("Url", process.env.API_URL);
 
   const router = useRouter();
 
@@ -47,9 +46,15 @@ export default function Home() {
             <button
               className="cursor-pointer flex gap-2 justify-center items-center bg-white border-none outline-none"
               onClick={() => {
-                logout().then(() => {
-                  router.push("/login");
-                });
+                logout().then(
+                  () => {
+                    toast.success("Logout efetuado com sucesso");
+                    router.push("/login");
+                  },
+                  () => {
+                    toast.error("Erro ao efetuar logout");
+                  }
+                );
               }}
             >
               <IoExitOutline color="#1267fc" size={25} />

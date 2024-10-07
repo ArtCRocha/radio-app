@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "../context/authContext";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   getStations,
@@ -13,7 +13,6 @@ import { BsPlusCircle } from "react-icons/bs";
 import { FaCircleCheck } from "react-icons/fa6";
 import { StationProps } from "../types/station";
 import ToolTip from "../components/toolTip";
-import Spinner from "./spinner";
 import { toast } from "react-toastify";
 import Button from "./button";
 
@@ -63,7 +62,9 @@ export default function Sidebar() {
       />
       <div
         className={`${
-          openSidebar ? "overflow-y-auto" : "overflow-y-hidden"
+          openSidebar
+            ? "overflow-y-auto"
+            : "overflow-y-hidden overflow-x-hidden"
         } flex flex-col items-start h-full py-7`}
       >
         {stationsData.data?.map((station: StationProps) => {
@@ -128,6 +129,7 @@ export default function Sidebar() {
                       userId: user?.id,
                     }).then(
                       () => {
+                        client.invalidateQueries(["stationsByUserId"]);
                         client.invalidateQueries(["stations"]);
                         client.invalidateQueries(["stationsIds"]);
                         setIsAddingToList("");
@@ -144,13 +146,15 @@ export default function Sidebar() {
           );
         })}
       </div>
-      <Button
-        type="button"
-        onClick={() => setStationLimit((prev) => prev + 10)}
-        isLoading={stationsData.isFetching || stationsData.isLoading}
-      >
-        Ver mais
-      </Button>
+      <div className={openSidebar ? "opacity-100" : "opacity-0"}>
+        <Button
+          type="button"
+          onClick={() => setStationLimit((prev) => prev + 10)}
+          isLoading={stationsData.isFetching || stationsData.isLoading}
+        >
+          Ver mais
+        </Button>
+      </div>
     </div>
   );
 }

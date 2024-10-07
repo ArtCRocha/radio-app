@@ -38,8 +38,8 @@ export default function Login() {
     completName: Yup.string().test(
       "global-ok",
       "Obrigatório informar o nome completo",
-      () => {
-        if (formType === 1) return false;
+      (value) => {
+        if (formType === 1 && !value) return false;
         return true;
       }
     ),
@@ -55,9 +55,11 @@ export default function Login() {
         () => {
           router.push("/");
           toast.success("Login efetuado com sucesso");
+          setLoading(false);
         },
         () => {
-          toast.success("Ero ao efetuar login");
+          toast.error("Ero ao efetuar login");
+          setLoading(false);
         }
       );
     } else {
@@ -65,9 +67,11 @@ export default function Login() {
         () => {
           router.push("/");
           toast.success("Login efetuado com sucesso");
+          setLoading(false);
         },
         () => {
           toast.error("Ero ao efetuar login");
+          setLoading(false);
         }
       );
     }

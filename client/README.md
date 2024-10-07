@@ -1,4 +1,4 @@
-# Radio Browser App - Coodesh
+# Radio Browser App - This is a challenge by [Coodesh](https://coodesh.com/)
 
 Uma aplicação web que permite aos usuários explorar, ouvir e gerenciar suas rádios favoritas.
 
