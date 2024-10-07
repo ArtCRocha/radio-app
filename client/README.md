@@ -13,3 +13,5 @@
 7 - Fiz umas melhorias refatorando o código de formulário de login e adicionando um toast para exibir mensagens;
 
 8 - Agora irei implementar uma alteração necessária que fiz no back-end, para melhorar a ação de adicionar rádio à lista;
+
+9 - Tive que refatorar o componente ProtectedPages, pois ele só verificava se estia o token no localStorage, mas se o token do servidro expirar, ele permitia ainda acessar a home;
