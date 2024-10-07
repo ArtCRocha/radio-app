@@ -5,3 +5,5 @@
 3 - Irei criar uma pasta "components" que irá obter os compenentes que serão reutilizados por toda a aplicação. Logo após isso, irei criar uma pasta hooks que irá abrigar os componentes de query que podem ser reutilizados;
 
 4 - Após a criação dos componentes, irei criar a tela de login;
+
+5 - Agora irei modificar o arquivo "Home" para conter os componentes sidebar e stationList;
