@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("radio-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc0f449e2d6486116b8b1eb7af0373168ee88ae0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19378049155c3a4eeea1ac7bf9ee14195f660e83")]
 [assembly: System.Reflection.AssemblyProductAttribute("radio-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("radio-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

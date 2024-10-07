@@ -7,8 +7,8 @@ export async function getStations({name, limit}: SearchStation) {
     return data;
 }
 
-export async function getStationsByUserId(userId: string, page: number) {
-    const { data } = await api.get(`stations/user/${userId}${page ? `?page=${page}`: ""}`);
+export async function getStationsByUserId(userId: string, page: number, search: string) {
+    const { data } = await api.get(`stations/user/${userId}?page=${page}${search ? `&search=${search}`: ""}`);
     return data;
 }
 

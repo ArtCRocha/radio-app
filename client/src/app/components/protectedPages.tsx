@@ -11,16 +11,10 @@ export default function ProtectedPages({ children }: { children: ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
-    if (!loading && !user) {
-      localStorage.removeItem("token");
-    }
-  }, [loading, user]);
-
-  useEffect(() => {
-    if (!token) {
+    if (!token || (token && !loading && !user)) {
       router.push("/login");
     }
-  }, [token, router]);
+  }, [token, user, loading, router]);
 
   if (loading)
     return (

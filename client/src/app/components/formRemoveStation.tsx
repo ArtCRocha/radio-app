@@ -25,6 +25,7 @@ export default function FormDeleteStation({
     deleteStation(stationId).then(
       () => {
         client.invalidateQueries(["stationsByUserId"]);
+        client.invalidateQueries(["stationsIds"]);
         toast.success("Rádio removida com sucesso");
         onClose();
       },

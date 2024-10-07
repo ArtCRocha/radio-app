@@ -134,7 +134,7 @@ export default function Sidebar() {
                       }).then(
                         () => {
                           client.invalidateQueries(["stations"]);
-                          client.invalidateQueries(["stationsByUserId"]);
+                          client.invalidateQueries(["stationsIds"]);
                           setIsAddingToList("");
                           toast.success("Rádio adicionado à lista com sucesso");
                         },

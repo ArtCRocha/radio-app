@@ -1,14 +1,10 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useAuth } from "../context/authContext";
 import { useRef, useState } from "react";
 import Modal from "../components/modal";
 import useModal from "../hooks/useModal";
 import { FaPlay, FaPause, FaTrash } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
-import { CiUser } from "react-icons/ci";
-import { IoExitOutline } from "react-icons/io5";
 import Spinner from "../components/spinner";
 import { StationListProps } from "../types/station";
 import FormEditStation from "./formEditStation";
@@ -21,9 +17,6 @@ export default function StationList({
   stationData: StationListProps;
   stationIsLoading: boolean;
 }) {
-  const [stationName, setStationName] = useState<string>("");
-
-  const { logout, user } = useAuth();
   const { isOpen, closeModal, openModal, data } = useModal();
 
   const [playingStationId, setPlayingStationId] = useState<string | null>(null);
@@ -47,44 +40,13 @@ export default function StationList({
     }
   };
 
-  const router = useRouter();
-
   return (
     <>
       <div className="flex-1 bg-white flex flex-col gap-5">
-        <div className="py-4 px-10 border border-gray-200 flex justify-between">
-          <div className="flex gap-3">
-            <div className="rounded-full border border-gray-500 flex justify-center items-center p-2">
-              <CiUser color="#545454" size={30} />
-            </div>
-            <div>
-              <p className="text-black font-semibold">{user?.completName}</p>
-              <p className="text-black">{user?.email}</p>
-            </div>
-          </div>
-          <button
-            className="cursor-pointer flex gap-2 justify-center items-center bg-white border-none outline-none"
-            onClick={() => {
-              logout().then(() => {
-                router.push("/login");
-              });
-            }}
-          >
-            <IoExitOutline color="#1267fc" size={25} />
-            <p className="text-black">Sair</p>
-          </button>
-        </div>
-
         <div
-          style={{ height: "calc(100vh - 200px)" }}
+          style={{ height: "calc(100vh - 250px)" }}
           className="w-full flex flex-col gap-4 px-10"
         >
-          <input
-            value={stationName}
-            onChange={(e) => setStationName(e.target.value)}
-            placeholder="Buscar por nome da rádio..."
-            className={`w-full p-2 border border-gray-300 rounded-md outline-none`}
-          />
           <div className="w-full overflow-y-auto flex flex-col gap-4">
             {stationIsLoading ? (
               <Spinner />

@@ -28,6 +28,7 @@ export default function FormEditStation({
     updateStation(stationId, reqData).then(
       () => {
         client.invalidateQueries(["stationsByUserId"]);
+        client.invalidateQueries(["stationsIds"]);
         toast.success("Rádio editada com sucesso");
         onClose();
       },

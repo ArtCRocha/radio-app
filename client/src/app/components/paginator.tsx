@@ -19,7 +19,7 @@ export default function Paginator({
   }, [totalPages]);
 
   return (
-    <nav className="flex justify-center mt-4">
+    <nav className="flex justify-center">
       <ul className="inline-flex items-center -space-x-px">
         <li>
           <button

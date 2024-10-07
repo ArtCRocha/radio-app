@@ -18,7 +18,15 @@ export default function Login() {
   const [formType, setFormType] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const { login, register, token } = useAuth();
+  const { login, register, user } = useAuth();
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (user) {
+      router.push("/");
+    }
+  }, [user, router]);
 
   const initialValues: MyFormValues = {
     email: "",
@@ -38,14 +46,6 @@ export default function Login() {
     email: Yup.string().required("Obrigatório informar o email"),
     password: Yup.string().required("Obrigatório informar a senha"),
   });
-
-  const router = useRouter();
-
-  useEffect(() => {
-    if (token) {
-      router.push("/");
-    }
-  }, [token, router]);
 
   async function handleSubmit(values: MyFormValues) {
     setLoading(true);
