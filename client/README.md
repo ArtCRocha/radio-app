@@ -1,6 +1,9 @@
 # Radio Browser App - This is a challenge by [Coodesh](https://coodesh.com/)
 
+### Acessar o Sistema
+
 Uma aplicação web que permite aos usuários explorar, ouvir e gerenciar suas rádios favoritas.
+[Clique aqui para acessar o sistema](https://radio-app-arthur-rocha.vercel.app/)
 
 ## Tecnologias Utilizadas
 
@@ -58,3 +61,5 @@ Uma aplicação web que permite aos usuários explorar, ouvir e gerenciar suas r
 10 - Adição de informações no README de como rodar o projeto e criaçaõ do arquivo .env;
 
 11 - O localStorage não pode ser interpretado no lado do servidor, por isso tive realizar umas mudanças no meu contexto, verificando se o tipo de ambiente acessado é na parte do client e criando um estado que vai gerenciar a inicialização do token;
+
+12 - Acabei de fazer o deploy da minha aplicação na Vercel. Disponibilizei o link no topo do documento.
