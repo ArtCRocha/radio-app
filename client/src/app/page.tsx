@@ -2,7 +2,7 @@
 
 import ProtectedPages from "./components/protectedPages";
 import { useAuth } from "./context/authContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getStationsByUserId } from "./services/station";
 import Sidebar from "./components/sidebar";
@@ -17,6 +17,8 @@ export default function Home() {
   const [searchStation, setSearchStation] = useState<string>("");
 
   const { user, logout } = useAuth();
+
+  console.log("Url", process.env.API_URL);
 
   const router = useRouter();
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "../context/authContext";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   getStations,
@@ -15,6 +15,7 @@ import { StationProps } from "../types/station";
 import ToolTip from "../components/toolTip";
 import Spinner from "./spinner";
 import { toast } from "react-toastify";
+import Button from "./button";
 
 export default function Sidebar() {
   const [stationName, setStationName] = useState<string>("");
@@ -29,6 +30,9 @@ export default function Sidebar() {
   const stationsData = useQuery({
     queryKey: ["stations", stationName, stationLimit],
     queryFn: () => getStations({ name: stationName, limit: stationLimit }),
+    enabled: !!stationLimit,
+    retry: 3,
+    retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000),
   });
 
   const stationsIds = useQuery({
@@ -62,97 +66,91 @@ export default function Sidebar() {
           openSidebar ? "overflow-y-auto" : "overflow-y-hidden"
         } flex flex-col items-start h-full py-7`}
       >
-        {stationsData.data?.length === 0 ? (
-          <p
-            className={`${
-              openSidebar ? "opacity-100" : "opacity-0"
-            } duration-300 whitespace-nowrap`}
-          >
-            <Spinner />
-          </p>
-        ) : (
-          stationsData.data?.map((station: StationProps) => {
-            const stationInListFinded = stationsIds.data?.find(
-              (x: string) => x === station.stationuuid
-            );
-            return (
-              <div
-                key={station.stationuuid}
-                className={`${
-                  openSidebar ? "opacity-100" : "opacity-0"
-                } duration-300 w-full p-4 flex justify-between items-center`}
-              >
-                <ToolTip text={station.name}>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        station.name?.length > 25
-                          ? `${station.name?.slice(0, 25)}...`
-                          : station.name,
-                    }}
-                  ></p>
-                </ToolTip>
-                {stationInListFinded ? (
-                  <FaCircleCheck color="#28b44e" size={25} />
-                ) : (
-                  <BsPlusCircle
-                    color="#1267fc"
-                    size={25}
-                    cursor={isAddingToList ? "not-allowed" : "pointer"}
-                    onClick={() => {
-                      setIsAddingToList(station.stationuuid);
-                      const {
-                        name,
-                        changeuuid,
-                        serveruuid,
-                        stationuuid,
-                        url,
-                        urlResolved,
-                        homePage,
-                        favicon,
-                        country,
-                        state,
-                        countryCode,
-                        language,
-                        codec,
-                      } = station;
-                      registerStation({
-                        name,
-                        changeuuid,
-                        serveruuid,
-                        stationuuid,
-                        url,
-                        urlResolved,
-                        homePage,
-                        favicon,
-                        country,
-                        state,
-                        countryCode,
-                        language,
-                        codec,
-                        userId: user?.id,
-                      }).then(
-                        () => {
-                          client.invalidateQueries(["stations"]);
-                          client.invalidateQueries(["stationsIds"]);
-                          setIsAddingToList("");
-                          toast.success("Rádio adicionado à lista com sucesso");
-                        },
-                        () => {
-                          toast.error("Erro ao adicionar rádio à lista");
-                        }
-                      );
-                    }}
-                  />
-                )}
-              </div>
-            );
-          })
-        )}
+        {stationsData.data?.map((station: StationProps) => {
+          const stationInListFinded = stationsIds.data?.find(
+            (x: string) => x === station.stationuuid
+          );
+          return (
+            <div
+              key={station.stationuuid}
+              className={`${
+                openSidebar ? "opacity-100" : "opacity-0"
+              } duration-300 w-full p-4 flex justify-between items-center`}
+            >
+              <ToolTip text={station.name}>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      station.name?.length > 25
+                        ? `${station.name?.slice(0, 25)}...`
+                        : station.name,
+                  }}
+                ></p>
+              </ToolTip>
+              {stationInListFinded ? (
+                <FaCircleCheck color="#28b44e" size={25} />
+              ) : (
+                <BsPlusCircle
+                  color="#1267fc"
+                  size={25}
+                  cursor={isAddingToList ? "not-allowed" : "pointer"}
+                  onClick={() => {
+                    setIsAddingToList(station.stationuuid);
+                    const {
+                      name,
+                      changeuuid,
+                      serveruuid,
+                      stationuuid,
+                      url,
+                      urlResolved,
+                      homePage,
+                      favicon,
+                      country,
+                      state,
+                      countryCode,
+                      language,
+                      codec,
+                    } = station;
+                    registerStation({
+                      name,
+                      changeuuid,
+                      serveruuid,
+                      stationuuid,
+                      url,
+                      urlResolved,
+                      homePage,
+                      favicon,
+                      country,
+                      state,
+                      countryCode,
+                      language,
+                      codec,
+                      userId: user?.id,
+                    }).then(
+                      () => {
+                        client.invalidateQueries(["stations"]);
+                        client.invalidateQueries(["stationsIds"]);
+                        setIsAddingToList("");
+                        toast.success("Rádio adicionado à lista com sucesso");
+                      },
+                      () => {
+                        toast.error("Erro ao adicionar rádio à lista");
+                      }
+                    );
+                  }}
+                />
+              )}
+            </div>
+          );
+        })}
       </div>
-      <button onClick={() => setStationLimit((prev) => prev + 10)}>
+      <Button
+        type="button"
+        onClick={() => setStationLimit((prev) => prev + 10)}
+        isLoading={stationsData.isFetching || stationsData.isLoading}
+      >
         Ver mais
-      </button>
+      </Button>
     </div>
   );
 }

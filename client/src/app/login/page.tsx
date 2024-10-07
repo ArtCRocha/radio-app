@@ -67,7 +67,7 @@ export default function Login() {
           toast.success("Login efetuado com sucesso");
         },
         () => {
-          toast.success("Ero ao efetuar login");
+          toast.error("Ero ao efetuar login");
         }
       );
     }
