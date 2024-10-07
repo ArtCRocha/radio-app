@@ -146,8 +146,7 @@
               "RelativeToolTip": "Mappers\\StationMapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:07:13.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:07:13.529Z"
             },
             {
               "$type": "Document",
@@ -159,8 +158,7 @@
               "RelativeToolTip": "Context\\RadioApiDBContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T15:36:18.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T15:36:18.898Z"
             },
             {
               "$type": "Document",
@@ -172,8 +170,7 @@
               "RelativeToolTip": "Mappers\\UserMapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:28:37.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:28:37.73Z"
             },
             {
               "$type": "Document",
@@ -185,8 +182,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T15:30:32.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T15:30:32.263Z"
             },
             {
               "$type": "Document",
@@ -198,8 +194,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAFYAAAAAAAAAAAAWwF8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T15:32:39.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T15:32:39.52Z"
             },
             {
               "$type": "Document",
@@ -211,8 +206,7 @@
               "RelativeToolTip": "Controllers\\StationController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:00:09.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:00:09.55Z"
             },
             {
               "$type": "Document",
@@ -222,7 +216,7 @@
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T17:08:42.549Z",
               "EditorCaption": ""
@@ -237,8 +231,7 @@
               "RelativeToolTip": "DTO\\StationDTO.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAA1wAkAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:19:59.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:19:59.582Z"
             },
             {
               "$type": "Document",
@@ -250,8 +243,7 @@
               "RelativeToolTip": "DTO\\RegisterDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:26:24.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:26:24.218Z"
             },
             {
               "$type": "Document",
@@ -263,8 +255,7 @@
               "RelativeToolTip": "DTO\\LoginDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:25:34.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:25:34.522Z"
             },
             {
               "$type": "Document",
@@ -276,8 +267,7 @@
               "RelativeToolTip": "Models\\Station.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:47:36.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:47:36.483Z"
             },
             {
               "$type": "Document",
@@ -289,8 +279,7 @@
               "RelativeToolTip": "Models\\RevokedToken.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:00:56.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:00:56.887Z"
             },
             {
               "$type": "Document",
@@ -302,8 +291,7 @@
               "RelativeToolTip": "Repositories\\IStationRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:00:55.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:00:55.31Z"
             },
             {
               "$type": "Document",
@@ -315,8 +303,7 @@
               "RelativeToolTip": "Repositories\\StationRepository.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwB8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:03:04.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:03:04.853Z"
             },
             {
               "$type": "Document",
@@ -328,8 +315,7 @@
               "RelativeToolTip": "Results\\StationResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:11:43.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:11:43.792Z"
             },
             {
               "$type": "Document",
@@ -341,8 +327,7 @@
               "RelativeToolTip": "Results\\UserResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:41:12.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:41:12.061Z"
             },
             {
               "$type": "Document",
@@ -354,8 +339,7 @@
               "RelativeToolTip": "Repositories\\RevokedTokenRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:59:35.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:59:35.714Z"
             },
             {
               "$type": "Document",
@@ -367,8 +351,7 @@
               "RelativeToolTip": "Repositories\\IRevokedTokenRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:59:54.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:59:54.413Z"
             },
             {
               "$type": "Document",
@@ -380,8 +363,7 @@
               "RelativeToolTip": "Repositories\\UserRepository.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T16:08:27.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T16:08:27.347Z"
             },
             {
               "$type": "Document",
@@ -393,8 +375,7 @@
               "RelativeToolTip": "Repositories\\IUserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T16:08:58.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T16:08:58.461Z"
             },
             {
               "$type": "Document",
@@ -406,8 +387,7 @@
               "RelativeToolTip": "Results\\PaginationResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:03:22.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:03:22.362Z"
             },
             {
               "$type": "Document",
@@ -419,8 +399,7 @@
               "RelativeToolTip": "Services\\TokenService.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:10:31.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:10:31.763Z"
             },
             {
               "$type": "Document",
@@ -432,8 +411,7 @@
               "RelativeToolTip": "Services\\ITokenService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:10:02.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:10:02.482Z"
             },
             {
               "$type": "Document",
@@ -445,8 +423,7 @@
               "RelativeToolTip": "Results\\TokenResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:36:36.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:36:36.263Z"
             },
             {
               "$type": "Document",
@@ -458,8 +435,7 @@
               "RelativeToolTip": "Exceptions\\NotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:40:25.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:40:25.962Z"
             },
             {
               "$type": "Document",
@@ -471,8 +447,7 @@
               "RelativeToolTip": "Services\\KeyService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:11:27.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:11:27.747Z"
             },
             {
               "$type": "Document",
@@ -484,8 +459,7 @@
               "RelativeToolTip": ".env",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-04T15:39:55.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T15:39:55.227Z"
             }
           ]
         }

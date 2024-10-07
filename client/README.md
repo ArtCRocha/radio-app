@@ -1,0 +1,1 @@
+1 - Primeiro irei instalar as dependencias necessárias para o projeto, usando: npm install @tailwindcss/aspect-ratio@^0.4.2 @tailwindcss/forms@^0.5.9 @tailwindcss/typography@^0.5.15 @tanstack/react-query@^4.36.1 @tanstack/react-query-devtools@^4.36.1 axios@^1.7.7 next@^14.2.14 react@^18.3.1 react-dom@^18.3.1 react-icons@^5.3.0
