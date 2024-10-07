@@ -6,7 +6,7 @@ import useModal from "../hooks/useModal";
 import { FaPlay, FaPause, FaTrash } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import Spinner from "../components/spinner";
-import { StationListProps } from "../types/station";
+import { StationListProps, StationWithId } from "../types/station";
 import FormEditStation from "./formEditStation";
 import FormDeleteStation from "./formRemoveStation";
 
@@ -58,71 +58,79 @@ export default function StationList({
                     botão + na rádio que deseja ouvir para adicionar.
                   </p>
                 ) : (
-                  stationData?.results?.map((stationByUserId: any) => {
-                    return (
-                      <div
-                        key={stationByUserId.id}
-                        className="bg-white w-full p-4 rounded-lg shadow-lg flex justify-between items-center border border-gray-200"
-                      >
-                        <div className="flex items-center space-x-4">
-                          <audio
-                            ref={(el) => {
-                              audioRefs.current[stationByUserId.id] = el;
-                            }}
-                            src={
-                              stationByUserId.url || stationByUserId.urlResolved
-                            }
-                          />
-                          <button
-                            onClick={() => togglePlayPause(stationByUserId.id)}
-                            className="bg-[#1267fc] text-white w-12 h-12 flex items-center justify-center rounded-full focus:outline-none"
-                          >
-                            {playingStationId === stationByUserId.id ? (
-                              <FaPause color="#ffffff" size={15} />
-                            ) : (
-                              <FaPlay color="#ffffff" size={15} />
-                            )}
-                          </button>
-                          <div className="flex flex-col">
-                            <h3
-                              className="text-black font-semibold"
-                              dangerouslySetInnerHTML={{
-                                __html: stationByUserId.name,
+                  stationData?.results?.map(
+                    (stationByUserId: StationWithId) => {
+                      return (
+                        <div
+                          key={stationByUserId.id}
+                          className="bg-white w-full p-4 rounded-lg shadow-lg flex justify-between items-center border border-gray-200"
+                        >
+                          <div className="flex items-center space-x-4">
+                            <audio
+                              ref={(el) => {
+                                audioRefs.current[stationByUserId.id] = el;
                               }}
-                            ></h3>
-                            <p className="text-gray-500 text-sm">
-                              {stationByUserId.country}{" "}
-                              {stationByUserId.countryCode}
-                            </p>
-                            <p className="text-gray-500 text-sm">
-                              {stationByUserId.language}
-                            </p>
+                              src={
+                                stationByUserId.url ||
+                                stationByUserId.urlResolved
+                              }
+                            />
+                            <button
+                              onClick={() =>
+                                togglePlayPause(stationByUserId.id)
+                              }
+                              className="bg-[#1267fc] text-white w-12 h-12 flex items-center justify-center rounded-full focus:outline-none"
+                            >
+                              {playingStationId === stationByUserId.id ? (
+                                <FaPause color="#ffffff" size={15} />
+                              ) : (
+                                <FaPlay color="#ffffff" size={15} />
+                              )}
+                            </button>
+                            <div className="flex flex-col">
+                              <h3
+                                className="text-black font-semibold"
+                                dangerouslySetInnerHTML={{
+                                  __html: stationByUserId.name,
+                                }}
+                              ></h3>
+                              <p className="text-gray-500 text-sm">
+                                {stationByUserId.country}{" "}
+                                {stationByUserId.countryCode}
+                              </p>
+                              <p className="text-gray-500 text-sm">
+                                {stationByUserId.language}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex gap-5">
+                            <MdEdit
+                              color="#1267fc"
+                              size={25}
+                              cursor="pointer"
+                              onClick={() =>
+                                openModal({
+                                  data: stationByUserId,
+                                  type: "edit",
+                                })
+                              }
+                            />
+                            <FaTrash
+                              color="#1267fc"
+                              size={20}
+                              cursor="pointer"
+                              onClick={() =>
+                                openModal({
+                                  data: stationByUserId,
+                                  type: "delete",
+                                })
+                              }
+                            />
                           </div>
                         </div>
-                        <div className="flex gap-5">
-                          <MdEdit
-                            color="#1267fc"
-                            size={25}
-                            cursor="pointer"
-                            onClick={() =>
-                              openModal({ data: stationByUserId, type: "edit" })
-                            }
-                          />
-                          <FaTrash
-                            color="#1267fc"
-                            size={20}
-                            cursor="pointer"
-                            onClick={() =>
-                              openModal({
-                                data: stationByUserId,
-                                type: "delete",
-                              })
-                            }
-                          />
-                        </div>
-                      </div>
-                    );
-                  })
+                      );
+                    }
+                  )
                 )}
               </>
             )}
@@ -130,18 +138,22 @@ export default function StationList({
         </div>
       </div>
       <Modal isOpen={isOpen === "edit"} onClose={closeModal}>
-        <FormEditStation
-          stationData={data}
-          stationId={data?.id}
-          onClose={closeModal}
-        />
+        {data && (
+          <FormEditStation
+            stationData={data}
+            stationId={data?.id}
+            onClose={closeModal}
+          />
+        )}
       </Modal>
       <Modal isOpen={isOpen === "delete"} onClose={closeModal}>
-        <FormDeleteStation
-          stationName={data?.name}
-          stationId={data?.id}
-          onClose={closeModal}
-        />
+        {data && (
+          <FormDeleteStation
+            stationName={data?.name}
+            stationId={data?.id}
+            onClose={closeModal}
+          />
+        )}
       </Modal>
     </>
   );

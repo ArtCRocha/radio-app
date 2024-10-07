@@ -25,7 +25,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
       client.invalidateQueries(["user"]);
     }
-  }, [token]);
+  }, [token, client]);
 
   const user = useQuery({
     queryKey: ["user"],

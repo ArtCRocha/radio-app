@@ -20,11 +20,15 @@ export interface StationProps {
     userId: string | undefined
 }
 
+export interface StationWithId extends StationProps{
+    id: string;
+}
+
 export interface StationListProps {
     page: number;
     totalItemsCount: number;
     totalPages: number;
-    results: StationProps[];
+    results: StationWithId[];
     hasNextPage: boolean;
     hasPreviousPage: boolean
 }

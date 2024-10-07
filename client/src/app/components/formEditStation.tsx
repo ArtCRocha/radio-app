@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Button from "../components/button";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { StationEditProps } from "../types/station";
+import { StationEditProps, StationWithId } from "../types/station";
 import { updateStation } from "../services/station";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
@@ -13,7 +13,7 @@ export default function FormEditStation({
   stationId,
   onClose,
 }: {
-  stationData: StationEditProps;
+  stationData: StationWithId;
   stationId: string;
   onClose: () => void;
 }) {
