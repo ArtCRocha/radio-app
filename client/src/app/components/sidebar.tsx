@@ -3,20 +3,20 @@
 import { useAuth } from "../context/authContext";
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { getStations, registerStation } from "../services/station";
+import {
+  getStations,
+  getStationsIds,
+  registerStation,
+} from "../services/station";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsPlusCircle } from "react-icons/bs";
 import { FaCircleCheck } from "react-icons/fa6";
-import { StationListProps, StationProps } from "../types/station";
+import { StationProps } from "../types/station";
 import ToolTip from "../components/toolTip";
 import Spinner from "./spinner";
 import { toast } from "react-toastify";
 
-export default function Sidebar({
-  stationsByUserId,
-}: {
-  stationsByUserId: StationListProps;
-}) {
+export default function Sidebar() {
   const [stationName, setStationName] = useState<string>("");
   const [stationLimit, setStationLimit] = useState<number>(10);
   const [openSidebar, setopenSidebar] = useState(true);
@@ -29,6 +29,12 @@ export default function Sidebar({
   const stationsData = useQuery({
     queryKey: ["stations", stationName, stationLimit],
     queryFn: () => getStations({ name: stationName, limit: stationLimit }),
+  });
+
+  const stationsIds = useQuery({
+    queryKey: ["stationsIds", user?.id || ""],
+    queryFn: () => getStationsIds(user?.id || ""),
+    enabled: !!user?.id,
   });
 
   return (
@@ -66,8 +72,8 @@ export default function Sidebar({
           </p>
         ) : (
           stationsData.data?.map((station: StationProps) => {
-            const stationInListFinded = stationsByUserId?.results?.find(
-              (x: StationProps) => x.stationuuid === station.stationuuid
+            const stationInListFinded = stationsIds.data?.find(
+              (x: string) => x === station.stationuuid
             );
             return (
               <div

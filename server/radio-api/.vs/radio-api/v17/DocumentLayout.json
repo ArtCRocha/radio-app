@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\controllers\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:controllers\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\repositories\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:repositories\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\repositories\\istationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:repositories\\istationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\controllers\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:controllers\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 246,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,18 +146,17 @@
               "RelativeToolTip": "Mappers\\UserMapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:28:37.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:28:37.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "StationController.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\StationController.cs",
               "RelativeDocumentMoniker": "Controllers\\StationController.cs",
               "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\StationController.cs",
               "RelativeToolTip": "Controllers\\StationController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCAAAAANAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCIAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:00:09.55Z",
               "EditorCaption": ""
@@ -172,8 +171,7 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAgwEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:08:42.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T17:08:42.549Z"
             },
             {
               "$type": "Document",
@@ -185,18 +183,17 @@
               "RelativeToolTip": "Results\\StationResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:11:43.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:11:43.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StationRepository.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\StationRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\StationRepository.cs",
               "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\StationRepository.cs",
               "RelativeToolTip": "Repositories\\StationRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAoAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCIAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:03:04.853Z",
               "EditorCaption": ""
@@ -211,18 +208,17 @@
               "RelativeToolTip": "Models\\Station.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAIwAcAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:47:36.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:47:36.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IStationRepository.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\IStationRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IStationRepository.cs",
               "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\IStationRepository.cs",
               "RelativeToolTip": "Repositories\\IStationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:00:55.31Z",
               "EditorCaption": ""

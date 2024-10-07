@@ -14,13 +14,13 @@ namespace radio_api.Repositories
             _context = context;
         }
 
-        public async Task<PaginationResult<Station>> GetByUserId(int page, Guid userId, string name = null, string country = null, string language = null)
+        public async Task<PaginationResult<Station>> GetByUserId(int page, Guid userId, string search = null)
         {
             IQueryable<Station> stationQuery = _context.Stations.Where(e => e.UserId == userId);
-            if (!string.IsNullOrEmpty(name) || !string.IsNullOrEmpty(country) || !string.IsNullOrEmpty(language))
+            if (!string.IsNullOrEmpty(search))
             {
                 stationQuery = stationQuery.Where(u =>
-                     u.Name.Contains(name) || u.Country.Contains(country) || u.Language.Contains(language)
+                     u.Name.Contains(search) || u.Country.Contains(search) || u.Language.Contains(search)
                 );
             }
             var stations = await PaginationResult<Station>.CreateAsync(stationQuery, page);

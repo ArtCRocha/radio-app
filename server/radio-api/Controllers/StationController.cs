@@ -25,14 +25,14 @@ namespace radio_api.Controllers
         }
 
         [HttpGet("user/{userId}")]
-        public async Task<PaginationResult<StationResult>> GetByUserId(Guid userId, [FromQuery] int page = 1, [FromQuery] string name = null, [FromQuery] string country = null, [FromQuery] string language = null)
+        public async Task<PaginationResult<StationResult>> GetByUserId(Guid userId, [FromQuery] int page = 1, [FromQuery] string search = null)
         {
             if (page < 1)
             {
                 page = 1;
             }
 
-            var stations = await _stationRepository.GetByUserId(page, userId, name, country, language);
+            var stations = await _stationRepository.GetByUserId(page, userId, search);
             var result = stations.Results.Select(_mapper.Map<StationResult>).ToList();
             return new PaginationResult<StationResult>(result, stations.Page, stations.TotalItemsCount, stations.TotalPages);
         }

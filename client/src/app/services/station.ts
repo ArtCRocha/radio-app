@@ -12,6 +12,11 @@ export async function getStationsByUserId(userId: string, page: number) {
     return data;
 }
 
+export async function getStationsIds(userId: string) {
+    const { data } = await api.get(`stations/stationIds/${userId}`);
+    return data;
+}
+
 export async function registerStation(reqData: StationProps) {
     const { data } = await api.post(`stations`, reqData);
     return data;
@@ -26,3 +31,4 @@ export async function deleteStation(stationId: string) {
     const { data } = await api.delete(`stations/${stationId}`);
     return data;
 }
+

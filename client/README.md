@@ -11,3 +11,5 @@
 6 - Após isso, irei criar os formulários de edição e deleção de radio da lista. Irei instalar as dependencias formik e yup para manipulação e validação dos formulários;
 
 7 - Fiz umas melhorias refatorando o código de formulário de login e adicionando um toast para exibir mensagens;
+
+8 - Agora irei implementar uma alteração necessária que fiz no back-end, para melhorar a ação de adicionar rádio à lista;
