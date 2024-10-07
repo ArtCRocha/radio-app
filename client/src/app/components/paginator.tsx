@@ -36,7 +36,7 @@ export default function Paginator({
           <li key={number}>
             <button
               onClick={() => onPageChange(number)}
-              className={`px-3 py-2 text-gray-400 bg-white hover:text-blue-500 ${
+              className={`px-3 py-2 bg-white hover:text-blue-500 ${
                 number === currentPage ? "text-blue-500" : "text-gray-500"
               }`}
             >

@@ -23,17 +23,19 @@ export default function Home() {
   return (
     <ProtectedPages>
       <div className="flex">
-        <Sidebar currentPage={currentPage} />
-        <div className="flex-1 bg-white flex flex-col gap-5">
+        <Sidebar stationsByUserId={stationsByUserId.data} />
+        <div className="flex-1 bg-white flex flex-col gap-5 pb-4">
           <StationList
             stationData={stationsByUserId.data}
             stationIsLoading={stationsByUserId.isLoading}
           />
-          <Paginator
-            currentPage={currentPage}
-            totalPages={stationsByUserId.data?.totalPages}
-            onPageChange={setCurrentPage}
-          />
+          {stationsByUserId.data?.totalPages > 0 && (
+            <Paginator
+              currentPage={currentPage}
+              totalPages={stationsByUserId.data?.totalPages}
+              onPageChange={setCurrentPage}
+            />
+          )}
         </div>
       </div>
     </ProtectedPages>

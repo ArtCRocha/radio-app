@@ -5,6 +5,8 @@ import "./globals.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AuthProvider } from "./context/authContext";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ToastContainer, ToastOptions } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +33,16 @@ export default function RootLayout({
     },
   });
 
+  const toastOptions: ToastOptions = {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  };
+
   return (
     <html lang="en">
       <body
@@ -39,6 +51,7 @@ export default function RootLayout({
         <QueryClientProvider client={queryClient}>
           <AuthProvider>{children}</AuthProvider>
           <ReactQueryDevtools initialIsOpen={false} />
+          <ToastContainer {...toastOptions} />
         </QueryClientProvider>
       </body>
     </html>

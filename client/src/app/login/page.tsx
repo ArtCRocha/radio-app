@@ -6,6 +6,7 @@ import { useAuth } from "../context/authContext";
 import Button from "../components/button";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { toast } from "react-toastify";
 
 interface MyFormValues {
   email: string;
@@ -50,23 +51,25 @@ export default function Login() {
     setLoading(true);
     const reqData = { email: values.email, password: values.password };
     if (formType === 0) {
-      try {
-        await login(reqData);
-        router.push("/");
-      } catch (error) {
-        console.log("Error during login");
-      } finally {
-        setLoading(false);
-      }
+      login(reqData).then(
+        () => {
+          router.push("/");
+          toast.success("Login efetuado com sucesso");
+        },
+        () => {
+          toast.success("Ero ao efetuar login");
+        }
+      );
     } else {
-      try {
-        await register({ ...reqData, completName: values.completName });
-        router.push("/");
-      } catch (error) {
-        console.log("Error during registration");
-      } finally {
-        setLoading(false);
-      }
+      register({ ...reqData, completName: values.completName }).then(
+        () => {
+          router.push("/");
+          toast.success("Login efetuado com sucesso");
+        },
+        () => {
+          toast.success("Ero ao efetuar login");
+        }
+      );
     }
   }
 

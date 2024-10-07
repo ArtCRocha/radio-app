@@ -6,6 +6,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import { StationEditProps } from "../types/station";
 import { updateStation } from "../services/station";
 import { useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-toastify";
 
 export default function FormEditStation({
   stationData,
@@ -27,9 +28,12 @@ export default function FormEditStation({
     updateStation(stationId, reqData).then(
       () => {
         client.invalidateQueries(["stationsByUserId"]);
+        toast.success("Rádio editada com sucesso");
         onClose();
       },
-      () => {}
+      () => {
+        toast.error("Erro ao editar rádio");
+      }
     );
   }
 

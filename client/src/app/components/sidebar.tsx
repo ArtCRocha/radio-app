@@ -3,21 +3,24 @@
 import { useAuth } from "../context/authContext";
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import {
-  getStations,
-  getStationsByUserId,
-  registerStation,
-} from "../services/station";
+import { getStations, registerStation } from "../services/station";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsPlusCircle } from "react-icons/bs";
 import { FaCircleCheck } from "react-icons/fa6";
-import { StationProps } from "../types/station";
+import { StationListProps, StationProps } from "../types/station";
 import ToolTip from "../components/toolTip";
+import Spinner from "./spinner";
+import { toast } from "react-toastify";
 
-export default function Sidebar({ currentPage }: { currentPage: number }) {
+export default function Sidebar({
+  stationsByUserId,
+}: {
+  stationsByUserId: StationListProps;
+}) {
   const [stationName, setStationName] = useState<string>("");
   const [stationLimit, setStationLimit] = useState<number>(10);
   const [openSidebar, setopenSidebar] = useState(true);
+  const [isAddingToList, setIsAddingToList] = useState<string>("");
 
   const { user } = useAuth();
 
@@ -26,12 +29,6 @@ export default function Sidebar({ currentPage }: { currentPage: number }) {
   const stationsData = useQuery({
     queryKey: ["stations", stationName, stationLimit],
     queryFn: () => getStations({ name: stationName, limit: stationLimit }),
-  });
-
-  const stationsByUserId = useQuery({
-    queryKey: ["stationsByUserId", user?.id, currentPage],
-    queryFn: () => getStationsByUserId(user?.id || "", currentPage),
-    enabled: !!user?.id,
   });
 
   return (
@@ -65,11 +62,11 @@ export default function Sidebar({ currentPage }: { currentPage: number }) {
               openSidebar ? "opacity-100" : "opacity-0"
             } duration-300 whitespace-nowrap`}
           >
-            carregando
+            <Spinner />
           </p>
         ) : (
           stationsData.data?.map((station: StationProps) => {
-            const stationInListFinded = stationsByUserId.data?.results?.find(
+            const stationInListFinded = stationsByUserId?.results?.find(
               (x: StationProps) => x.stationuuid === station.stationuuid
             );
             return (
@@ -89,15 +86,15 @@ export default function Sidebar({ currentPage }: { currentPage: number }) {
                     }}
                   ></p>
                 </ToolTip>
-
                 {stationInListFinded ? (
                   <FaCircleCheck color="#28b44e" size={25} />
                 ) : (
                   <BsPlusCircle
                     color="#1267fc"
                     size={25}
-                    cursor="pointer"
+                    cursor={isAddingToList ? "not-allowed" : "pointer"}
                     onClick={() => {
+                      setIsAddingToList(station.stationuuid);
                       const {
                         name,
                         changeuuid,
@@ -128,10 +125,17 @@ export default function Sidebar({ currentPage }: { currentPage: number }) {
                         language,
                         codec,
                         userId: user?.id,
-                      }).then(() => {
-                        client.invalidateQueries(["stations"]);
-                        client.invalidateQueries(["stationsByUserId"]);
-                      });
+                      }).then(
+                        () => {
+                          client.invalidateQueries(["stations"]);
+                          client.invalidateQueries(["stationsByUserId"]);
+                          setIsAddingToList("");
+                          toast.success("Rádio adicionado à lista com sucesso");
+                        },
+                        () => {
+                          toast.error("Erro ao adicionar rádio à lista");
+                        }
+                      );
                     }}
                   />
                 )}
