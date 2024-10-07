@@ -139,9 +139,12 @@ export default function StationList({
           </div>
         </div>
       </div>
-      {console.log(isOpen)}
       <Modal isOpen={isOpen === "edit"} onClose={closeModal}>
-        <FormEditStation stationData={data} />
+        <FormEditStation
+          stationData={data}
+          stationId={data?.id}
+          onClose={closeModal}
+        />
       </Modal>
     </>
   );

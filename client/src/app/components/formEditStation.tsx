@@ -4,18 +4,33 @@ import { useState } from "react";
 import Button from "../components/button";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { StationEditProps } from "../types/station";
+import { updateStation } from "../services/station";
+import { useQueryClient } from "@tanstack/react-query";
 
 export default function FormEditStation({
   stationData,
+  stationId,
+  onClose,
 }: {
   stationData: StationEditProps;
+  stationId: string;
+  onClose: () => void;
 }) {
   const [loading, setLoading] = useState<boolean>(false);
+
+  const client = useQueryClient();
 
   async function handleSubmit(values: StationEditProps) {
     const { name, country, state, countryCode, language } = values;
     setLoading(true);
     const reqData = { name, country, state, countryCode, language };
+    updateStation(stationId, reqData).then(
+      () => {
+        client.invalidateQueries(["stationsByUserId"]);
+        onClose();
+      },
+      () => {}
+    );
   }
 
   return (

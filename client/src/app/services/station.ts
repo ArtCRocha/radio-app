@@ -1,5 +1,5 @@
 import axios from "axios";
-import { StationProps, SearchStation } from "../types/station";
+import { StationProps, SearchStation, StationEditProps } from "../types/station";
 import api from "./api";
 
 export async function getStations({name, limit}: SearchStation) {
@@ -14,5 +14,10 @@ export async function getStationsByUserId(userId: string, page: number) {
 
 export async function registerStation(reqData: StationProps) {
     const { data } = await api.post(`stations`, reqData);
+    return data;
+}
+
+export async function updateStation(stationId: string, reqData: StationEditProps) {
+    const { data } = await api.patch(`stations/${stationId}`, reqData);
     return data;
 }
