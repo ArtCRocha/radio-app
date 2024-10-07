@@ -22,12 +22,6 @@ export default function Login() {
 
   const router = useRouter();
 
-  useEffect(() => {
-    if (user) {
-      router.push("/");
-    }
-  }, [user, router]);
-
   const initialValues: MyFormValues = {
     email: "",
     password: "",
