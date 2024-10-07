@@ -25,14 +25,14 @@ namespace radio_api.Controllers
         }
 
         [HttpGet("user/{userId}")]
-        public async Task<PaginationResult<StationResult>> GetByUserId(Guid userId, [FromQuery] int page = 1)
+        public async Task<PaginationResult<StationResult>> GetByUserId(Guid userId, [FromQuery] int page = 1, [FromQuery] string name = null, [FromQuery] string country = null, [FromQuery] string language = null)
         {
             if (page < 1)
             {
                 page = 1;
             }
 
-            var stations = await _stationRepository.GetByUserId(page, userId);
+            var stations = await _stationRepository.GetByUserId(page, userId, name, country, language);
             var result = stations.Results.Select(_mapper.Map<StationResult>).ToList();
             return new PaginationResult<StationResult>(result, stations.Page, stations.TotalItemsCount, stations.TotalPages);
         }
@@ -106,6 +106,17 @@ namespace radio_api.Controllers
             await _stationRepository.Delete(station);
             return "Estação deletada com sucesso";
 
+        }
+
+        [HttpGet("stationIds/{userId}")]
+        public async Task<List<string>> GetStationsIds(Guid userId)
+        {
+            if(userId == null)
+            {
+                throw new Exception("Id do usuário inválido");
+            }
+
+            return await _stationRepository.GetStationsIds(userId);
         }
 
     }

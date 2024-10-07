@@ -5,7 +5,8 @@ namespace radio_api.Repositories
 {
     public interface IStationRepository
     {
-        public Task<PaginationResult<Station>> GetByUserId(int page, Guid userId);
+        public Task<PaginationResult<Station>> GetByUserId(int page, Guid userId, string name = null, string country = null, string language = null);
+        public Task<List<string>> GetStationsIds(Guid userId);
         public Task<Station> GetById(Guid id);
         public Task Create(Station station);
         public Task Update(Station station);

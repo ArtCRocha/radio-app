@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\controllers\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:controllers\\stationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\repositories\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:repositories\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\repositories\\istationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:repositories\\istationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\results\\stationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:results\\stationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\mappers\\stationmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:context\\radioapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,24 +59,8 @@
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\models\\revokedtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:models\\revokedtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\repositories\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:repositories\\stationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\repositories\\istationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:repositories\\istationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\results\\stationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|solutionrelative:results\\stationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BD64C38-FADE-42F0-9E96-757636418138}|radio-api.csproj|c:\\users\\artth\\projects\\radio-app\\server\\radio-api\\results\\userresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 246,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,55 +138,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StationMapper.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Mappers\\StationMapper.cs",
-              "RelativeDocumentMoniker": "Mappers\\StationMapper.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Mappers\\StationMapper.cs",
-              "RelativeToolTip": "Mappers\\StationMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:07:13.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RadioApiDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Context\\RadioApiDBContext.cs",
-              "RelativeDocumentMoniker": "Context\\RadioApiDBContext.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Context\\RadioApiDBContext.cs",
-              "RelativeToolTip": "Context\\RadioApiDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T15:36:18.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "UserMapper.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Mappers\\UserMapper.cs",
               "RelativeDocumentMoniker": "Mappers\\UserMapper.cs",
               "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Mappers\\UserMapper.cs",
               "RelativeToolTip": "Mappers\\UserMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:28:37.73Z"
+              "WhenOpened": "2024-10-04T17:28:37.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "DocumentIndex": 0,
+              "Title": "StationController.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\StationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StationController.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\StationController.cs",
+              "RelativeToolTip": "Controllers\\StationController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T15:30:32.263Z"
+              "WhenOpened": "2024-10-04T19:00:09.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T17:08:42.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StationResult.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Results\\StationResult.cs",
+              "RelativeDocumentMoniker": "Results\\StationResult.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Results\\StationResult.cs",
+              "RelativeToolTip": "Results\\StationResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:11:43.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\StationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\StationRepository.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\StationRepository.cs",
+              "RelativeToolTip": "Repositories\\StationRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:03:04.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Station.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\Station.cs",
+              "RelativeDocumentMoniker": "Models\\Station.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\Station.cs",
+              "RelativeToolTip": "Models\\Station.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwAcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T18:47:36.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\IStationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IStationRepository.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\IStationRepository.cs",
+              "RelativeToolTip": "Repositories\\IStationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:00:55.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -198,32 +241,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StationController.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\StationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StationController.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\StationController.cs",
-              "RelativeToolTip": "Controllers\\StationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:00:09.55Z"
+              "WhenOpened": "2024-10-04T15:30:32.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "DocumentIndex": 10,
+              "Title": "RadioApiDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Context\\RadioApiDBContext.cs",
+              "RelativeDocumentMoniker": "Context\\RadioApiDBContext.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Context\\RadioApiDBContext.cs",
+              "RelativeToolTip": "Context\\RadioApiDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T17:08:42.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T15:36:18.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "StationMapper.cs",
+              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Mappers\\StationMapper.cs",
+              "RelativeDocumentMoniker": "Mappers\\StationMapper.cs",
+              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Mappers\\StationMapper.cs",
+              "RelativeToolTip": "Mappers\\StationMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:07:13.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "StationDTO.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\DTO\\StationDTO.cs",
               "RelativeDocumentMoniker": "DTO\\StationDTO.cs",
@@ -235,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\DTO\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "DTO\\RegisterDTO.cs",
@@ -247,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\DTO\\LoginDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
@@ -259,19 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Station.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\Station.cs",
-              "RelativeDocumentMoniker": "Models\\Station.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\Station.cs",
-              "RelativeToolTip": "Models\\Station.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T18:47:36.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "RevokedToken.cs",
               "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Models\\RevokedToken.cs",
               "RelativeDocumentMoniker": "Models\\RevokedToken.cs",
@@ -280,42 +322,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T18:00:56.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IStationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\IStationRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IStationRepository.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\IStationRepository.cs",
-              "RelativeToolTip": "Repositories\\IStationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:00:55.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\StationRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\StationRepository.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Repositories\\StationRepository.cs",
-              "RelativeToolTip": "Repositories\\StationRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwB8AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:03:04.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StationResult.cs",
-              "DocumentMoniker": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Results\\StationResult.cs",
-              "RelativeDocumentMoniker": "Results\\StationResult.cs",
-              "ToolTip": "C:\\Users\\artth\\Projects\\radio-app\\server\\radio-api\\Results\\StationResult.cs",
-              "RelativeToolTip": "Results\\StationResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:11:43.792Z"
             },
             {
               "$type": "Document",
