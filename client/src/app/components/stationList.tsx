@@ -11,6 +11,7 @@ import { CiUser } from "react-icons/ci";
 import { IoExitOutline } from "react-icons/io5";
 import Spinner from "../components/spinner";
 import { StationListProps } from "../types/station";
+import FormEditStation from "./formEditStation";
 
 export default function StationList({
   stationData,
@@ -22,7 +23,7 @@ export default function StationList({
   const [stationName, setStationName] = useState<string>("");
 
   const { logout, user } = useAuth();
-  const { isOpen, closeModal, openModal } = useModal();
+  const { isOpen, closeModal, openModal, data } = useModal();
 
   const [playingStationId, setPlayingStationId] = useState<string | null>(null);
   const audioRefs = useRef<{ [key: string]: HTMLAudioElement | null }>({});
@@ -121,7 +122,14 @@ export default function StationList({
                       </div>
                     </div>
                     <div className="flex gap-5">
-                      <MdEdit color="#1267fc" size={25} cursor="pointer" />
+                      <MdEdit
+                        color="#1267fc"
+                        size={25}
+                        cursor="pointer"
+                        onClick={() =>
+                          openModal({ data: stationByUserId, type: "edit" })
+                        }
+                      />
                       <FaTrash color="#1267fc" size={20} cursor="pointer" />
                     </div>
                   </div>
@@ -131,8 +139,9 @@ export default function StationList({
           </div>
         </div>
       </div>
-      <Modal isOpen={isOpen} onClose={closeModal}>
-        <p>teste</p>
+      {console.log(isOpen)}
+      <Modal isOpen={isOpen === "edit"} onClose={closeModal}>
+        <FormEditStation stationData={data} />
       </Modal>
     </>
   );

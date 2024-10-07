@@ -28,3 +28,11 @@ export interface StationListProps {
     hasNextPage: boolean;
     hasPreviousPage: boolean
 }
+
+export interface StationEditProps {
+    name: string;
+    country: string;
+    state: string;
+    countryCode: string;
+    language: string;
+  }

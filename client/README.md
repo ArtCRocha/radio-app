@@ -7,3 +7,5 @@
 4 - Após a criação dos componentes, irei criar a tela de login;
 
 5 - Agora irei modificar o arquivo "Home" para conter os componentes sidebar e stationList;
+
+6 - Após isso, irei criar os formulários de edição e deleção de radio da lista. Irei instalar as dependencias formik e yup para manipulação e validação dos formulários;
