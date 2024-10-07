@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../context/authContext";
 import Button from "../components/button";
 import { Formik, Field, Form, ErrorMessage } from "formik";
@@ -18,7 +18,7 @@ export default function Login() {
   const [formType, setFormType] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const { login, register, user } = useAuth();
+  const { login, register } = useAuth();
 
   const router = useRouter();
 
