@@ -45,7 +45,7 @@ export default function StationList({
       <div className="flex-1 bg-white flex flex-col gap-5">
         <div
           style={{ height: "calc(100vh - 250px)" }}
-          className="w-full flex flex-col gap-4 px-10"
+          className="w-full flex flex-col gap-4 px-7"
         >
           <div className="w-full overflow-y-auto flex flex-col gap-4">
             {stationIsLoading ? (
@@ -75,32 +75,34 @@ export default function StationList({
                                 stationByUserId.urlResolved
                               }
                             />
-                            <button
-                              onClick={() =>
-                                togglePlayPause(stationByUserId.id)
-                              }
-                              className="bg-[#1267fc] text-white w-12 h-12 flex items-center justify-center rounded-full focus:outline-none"
-                            >
-                              {playingStationId === stationByUserId.id ? (
-                                <FaPause color="#ffffff" size={15} />
-                              ) : (
-                                <FaPlay color="#ffffff" size={15} />
-                              )}
-                            </button>
-                            <div className="flex flex-col">
-                              <h3
-                                className="text-black font-semibold"
-                                dangerouslySetInnerHTML={{
-                                  __html: stationByUserId.name,
-                                }}
-                              ></h3>
-                              <p className="text-gray-500 text-sm">
-                                {stationByUserId.country}{" "}
-                                {stationByUserId.countryCode}
-                              </p>
-                              <p className="text-gray-500 text-sm">
-                                {stationByUserId.language}
-                              </p>
+                            <div className="flex gap-2 flex-wrap">
+                              <button
+                                onClick={() =>
+                                  togglePlayPause(stationByUserId.id)
+                                }
+                                className="bg-[#1267fc] text-white w-12 h-12 flex items-center justify-center rounded-full focus:outline-none"
+                              >
+                                {playingStationId === stationByUserId.id ? (
+                                  <FaPause color="#ffffff" size={15} />
+                                ) : (
+                                  <FaPlay color="#ffffff" size={15} />
+                                )}
+                              </button>
+                              <div className="flex flex-col flex-wrap">
+                                <h3
+                                  className="text-black font-semibold"
+                                  dangerouslySetInnerHTML={{
+                                    __html: stationByUserId.name,
+                                  }}
+                                ></h3>
+                                <p className="text-gray-500 text-sm">
+                                  {stationByUserId.country}{" "}
+                                  {stationByUserId.countryCode}
+                                </p>
+                                <p className="text-gray-500 text-sm">
+                                  {stationByUserId.language}
+                                </p>
+                              </div>
                             </div>
                           </div>
                           <div className="flex gap-5">

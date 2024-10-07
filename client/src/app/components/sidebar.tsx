@@ -43,7 +43,7 @@ export default function Sidebar() {
   return (
     <div
       className={`${
-        openSidebar ? "w-96" : "w-16"
+        openSidebar ? " min-w-[300px]" : "w-16"
       } h-screen bg-white text-black border-l-2 border-gray-200 border duration-300 flex flex-col gap-2 p-4`}
     >
       <GiHamburgerMenu

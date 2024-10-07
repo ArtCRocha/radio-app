@@ -32,8 +32,8 @@ export default function Home() {
     <ProtectedPages>
       <div className="flex">
         <Sidebar />
-        <div className="flex-1 bg-white flex flex-col gap-5 pb-4">
-          <div className="py-4 px-10 border border-gray-200 flex justify-between">
+        <div className="flex-1 bg-white flex flex-col gap-5">
+          <div className="py-2 px-7 border border-gray-200 flex justify-between flex-wrap gap-2">
             <div className="flex gap-3">
               <div className="rounded-full border border-gray-500 flex justify-center items-center p-2">
                 <CiUser color="#545454" size={30} />
@@ -61,7 +61,7 @@ export default function Home() {
               <p className="text-black">Sair</p>
             </button>
           </div>
-          <div className="w-full px-10">
+          <div className="w-full px-7">
             <input
               value={searchStation}
               onChange={(e) => setSearchStation(e.target.value)}
