@@ -56,3 +56,5 @@ Uma aplicação web que permite aos usuários explorar, ouvir e gerenciar suas r
 9 - Tive que refatorar o componente ProtectedPages, pois ele só verificava se estia o token no localStorage, mas se o token do servidro expirar, ele permitia ainda acessar a home;
 
 10 - Adição de informações no README de como rodar o projeto e criaçaõ do arquivo .env;
+
+11 - O localStorage não pode ser interpretado no lado do servidor, por isso tive realizar umas mudanças no meu contexto, verificando se o tipo de ambiente acessado é na parte do client e criando um estado que vai gerenciar a inicialização do token;
