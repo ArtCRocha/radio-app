@@ -3,3 +3,5 @@
 2 - Após a instalção das dependencias irei modificar meu arquivo layout para eu poder utilizar as ferramentas do Tanstack Query. Após isso, irei criar meu contexto de autenticação que irá propagar os dados meu usuário por toda aplicação. Irei criar uma pasta types para abrigar os tipos das entidades e payloads. Após isso irei, irei criar uma pasta service que irá abrigar todos os serviços da minha aplicação, incluido uma instancia do axios para requisições;
 
 3 - Irei criar uma pasta "components" que irá obter os compenentes que serão reutilizados por toda a aplicação. Logo após isso, irei criar uma pasta hooks que irá abrigar os componentes de query que podem ser reutilizados;
+
+4 - Após a criação dos componentes, irei criar a tela de login;
